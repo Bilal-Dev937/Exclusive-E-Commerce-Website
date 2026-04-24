@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="inner d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <h1>Exclusive</h1>
+                </div>
+                <nav class="d-none d-lg-block">
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+                <div class="cta-btn d-flex align-items-center justify-content-center ">
+                    <div class="Search-option d-flex align-items-center justify-content-center d-none d-md-block">
+                        <input type="search" placeholder="What are you looking for?">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="Wishlist d-none d-md-block">
+                        <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                    </div>
+                    <div class="add-to-Cart d-none d-md-block">
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <div class="profile-wrapper">
+
+                        <!-- User Icon -->
+                        <div class="user-icon" id="userIcon">
+                            <img src="./assets/images/user.png" alt="">
+                        </div>
+
+                        <!-- Profile Dropdown -->
+                        <div class="profile-dropdown" id="profileDropdown">
+
+                            <ul class="profile-menu">
+
+                                <li>
+                                    <a href="#">
+                                        <span class="icon">
+                                            <img src="./assets/images/user.png">
+                                        </span>
+                                        Manage My Account
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="icon">
+                                            <img src="./assets/images/icon-mallbag.png">
+                                        </span>
+                                        My Order
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="icon">
+                                            <img src="./assets/images/icon-cancel.png">
+                                        </span>
+                                        My Cancellations
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="icon">
+                                            <img src="./assets/images/Icon-Reviews.png">
+                                        </span>
+                                        My Reviews
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="icon">
+                                            <img src="./assets/images/Icon-logout.png">
+                                        </span>
+                                        Logout
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="burger-menu d-block d-lg-none" id="burgerMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <div class="close-btn" id="closeNav"><i class="fa-solid fa-xmark"></i></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <!-- <li><a href="">Pages</a></li> -->
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="wishlist">
+            <div class="container">
+                <div class="best-sells-head d-flex align-items-center justify-content-between flex-wrap">
+                    <div class="month d-flex align-items-center">
+                        <h3 class="d-inline-block">Wishlist (4)</h3>
+                    </div>
+                    <div class="view-btn">
+                        <button>View All Products</button>
+                    </div>
+                </div>
+                <div class="row best-sells-row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-1">
+                        <div class="product-card">
+                            <div class="image-box-wrapper flex-column">
+                                <div class="image-box">
+                                    <img src="./assets/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png"
+                                        alt="">
+                                </div>
+                                <div class="discount">
+                                    <p>-40%</p>
+                                </div>
+                                <div class="trash d-flex align-items-center flex-column">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <h5>HAVIT HV-G92 Gamepad</h5>
+                            </div>
+                            <div class="price">
+                                <p>$120 <span>$160</span></p>
+                            </div>
+                            <div class="star-rating-display" data-rating="4.3">
+                                <div class="stars">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <span class="reviews">(75)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-2">
+                        <div class="product-card">
+                            <div class="image-box-wrapper flex-column">
+                                <div class="image-box">
+                                    <img src="./assets/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png"
+                                        alt="">
+                                </div>
+                                <div class="discount">
+                                    <p>-40%</p>
+                                </div>
+                                <div class="trash d-flex align-items-center flex-column">
+                                    
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <h5>HAVIT HV-G92 Gamepad</h5>
+                            </div>
+                            <div class="price">
+                                <p>$120 <span>$160</span></p>
+                            </div>
+                            <div class="star-rating-display" data-rating="4.3">
+                                <div class="stars">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <span class="reviews">(75)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-3">
+                        <div class="product-card">
+                            <div class="image-box-wrapper flex-column">
+                                <div class="image-box">
+                                    <img class="m-5 mx-3" src="./assets/images/gammaxx-l240-argb-1-500x500 1.png"
+                                        alt="">
+                                </div>
+                                <div class="discount">
+                                    <p>-40%</p>
+                                </div>
+                                <div class="trash d-flex align-items-center flex-column">
+                                    
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <h5>HAVIT HV-G92 Gamepad</h5>
+                            </div>
+                            <div class="price">
+                                <p>$120 <span>$160</span></p>
+                            </div>
+                            <div class="star-rating-display" data-rating="4.3">
+                                <div class="stars">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <span class="reviews">(75)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-4">
+                        <div class="product-card">
+                            <div class="image-box-wrapper flex-column">
+                                <div class="image-box">
+                                    <img src="./assets/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png" alt="">
+                                </div>
+                                <div class="discount">
+                                    <p>-40%</p>
+                                </div>
+                                <div class="trash d-flex align-items-center flex-column">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <h5>HAVIT HV-G92 Gamepad</h5>
+                            </div>
+                            <div class="price">
+                                <p>$120 <span>$160</span></p>
+                            </div>
+                            <div class="star-rating-display" data-rating="4.3">
+                                <div class="stars">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <span class="reviews">(75)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="for-you">
+            <div class="container">
+                <div class="best-sells-head d-flex align-items-center justify-content-between flex-wrap">
+                    <div class="month d-flex align-items-center">
+                        <img src="./assets/images/Rectangle_17.png" alt="">
+                        <h3 class="d-inline-block">Just For You</h3>
+                    </div>
+                    <div class="view-btn">
+                        <button>See All</button>
+                    </div>
+                </div>
+                <div class="row best-sells-row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-1">
+                        <div class="product-card">
+                            <div class="image-box-wrapper flex-column">
+                                <div class="image-box">
+                                    <img src="./assets/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png"
+                                        alt="">
+                                </div>
+                                <div class="discount">
+                                    <p>-40%</p>
+                                </div>
+                                <div class="favourite d-flex align-items-center flex-column">
+                                    
+                                    <i class="fa-regular fa-eye"></i>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <h5>HAVIT HV-G92 Gamepad</h5>
+                            </div>
+                            <div class="price">
+                                <p>$120 <span>$160</span></p>
+                            </div>
+                            <div class="star-rating-display" data-rating="4.3">
+                                <div class="stars">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <span class="reviews">(75)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-2">
+                        <div class="product-card">
+                            <div class="image-box-wrapper flex-column">
+                                <div class="image-box">
+                                    <img src="./assets/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png"
+                                        alt="">
+                                </div>
+                                <div class="discount">
+                                    <p>-40%</p>
+                                </div>
+                                <div class="favourite d-flex align-items-center flex-column">
+                                    
+                                    <i class="fa-regular fa-eye"></i>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <h5>HAVIT HV-G92 Gamepad</h5>
+                            </div>
+                            <div class="price">
+                                <p>$120 <span>$160</span></p>
+                            </div>
+                            <div class="star-rating-display" data-rating="4.3">
+                                <div class="stars">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <span class="reviews">(75)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-3">
+                        <div class="product-card">
+                            <div class="image-box-wrapper flex-column">
+                                <div class="image-box">
+                                    <img class="m-5 mx-3" src="./assets/images/gammaxx-l240-argb-1-500x500 1.png"
+                                        alt="">
+                                </div>
+                                <div class="discount">
+                                    <p>-40%</p>
+                                </div>
+                                <div class="favourite d-flex align-items-center flex-column">
+                                    
+                                    <i class="fa-regular fa-eye"></i>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <h5>HAVIT HV-G92 Gamepad</h5>
+                            </div>
+                            <div class="price">
+                                <p>$120 <span>$160</span></p>
+                            </div>
+                            <div class="star-rating-display" data-rating="4.3">
+                                <div class="stars">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <span class="reviews">(75)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-4">
+                        <div class="product-card">
+                            <div class="image-box-wrapper flex-column">
+                                <div class="image-box">
+                                    <img src="./assets/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png" alt="">
+                                </div>
+                                <div class="discount">
+                                    <p>-40%</p>
+                                </div>
+                                <div class="favourite d-flex align-items-center flex-column">
+                                    
+                                    <i class="fa-regular fa-eye"></i>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <h5>HAVIT HV-G92 Gamepad</h5>
+                            </div>
+                            <div class="price">
+                                <p>$120 <span>$160</span></p>
+                            </div>
+                            <div class="star-rating-display" data-rating="4.3">
+                                <div class="stars">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <span class="reviews">(75)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-row d-flex justify-content-between flex-wrap">
+                <div class="section-1 section">
+                    <div class="footer-logo">
+                        <h1>Exclusive</h1>
+                    </div>
+                    <h5>Subscribe</h5>
+                    <p>Get 10% off your first order</p>
+                    <div class="mail-and-submit d-flex">
+                        <div class="mail-box">
+                            <input type="email" placeholder="Enter your email">
+                        </div>
+                        <button class="submit-btn">
+                            <img src="./assets/images/icon-send.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="section-2 section">
+                    <h5>Support</h5>
+                    <p>111 Bijoy sarani, Dhaka,<br> DH 1515, Bangladesh.</p>
+                    <div class="email">
+                        <p>exclusive@gmail.com</p>
+                    </div>
+                    <div class="contact">
+                        <p>+88015-88888-9999</p>
+                    </div>
+                </div>
+                <div class="section-3 section">
+                    <h5>Account</h5>
+                    <ul class="d-flex flex-column">
+                        <li><a href="myaccount.html">My Account</a></li>
+                        <li><a href="login.html">Login / Register</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="section-4 section">
+                    <h5>Quick Link</h5>
+                    <ul class="d-flex flex-column">
+                        <li><a href="privacyp.html">Privacy Policy</a></li>
+                        <li><a href="termsofuse.html">Terms Of Use</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="section-5 section">
+                    <h5>Download App</h5>
+                    <p>Save $3 with App New User Only</p>
+                    <div class="qr-code-and-app d-flex ">
+                        <div class="qr-code">
+                            <img src="./assets/images/Qrcode 1.png" alt="">
+                        </div>
+                        <div class="app-links d-flex flex-column">
+                            <img src="./assets/images/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.png"
+                                alt="">
+                            <img src="./assets/images/download-appstore.png" alt="">
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <ul class="d-flex">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><img src="./assets/images/icon-copyright.png" alt="">Copyright Rimel 2022. All right reserved</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+        integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./js/jquery1.10.2.min.js"></script>
+    <script>
+        const ratingContainers = document.querySelectorAll('.star-rating-display');
+
+        ratingContainers.forEach(container => {
+            const rating = parseFloat(container.getAttribute('data-rating'));
+            const stars = container.querySelectorAll('.star');
+
+            stars.forEach(star => {
+                const value = parseInt(star.getAttribute('data-value'));
+
+                if (value <= Math.floor(rating)) {
+                    star.classList.add('filled');
+                } else if (value - rating < 1 && value > rating) {
+                    star.classList.add('half');
+                }
+            });
+        });
+    </script>
+    <script>
+        document.querySelectorAll(".countdown").forEach((countdown) => {
+            const endDate = new Date(countdown.dataset.end).getTime();
+
+            const updateCountdown = () => {
+                const now = new Date().getTime();
+                const distance = endDate - now;
+
+                if (distance < 0) {
+                    countdown.querySelector(".days").textContent = "00";
+                    countdown.querySelector(".hours").textContent = "00";
+                    countdown.querySelector(".minutes").textContent = "00";
+                    countdown.querySelector(".seconds").textContent = "00";
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdown.querySelector(".days").textContent = days.toString().padStart(2, "0");
+                countdown.querySelector(".hours").textContent = hours.toString().padStart(2, "0");
+                countdown.querySelector(".minutes").textContent = minutes.toString().padStart(2, "0");
+                countdown.querySelector(".seconds").textContent = seconds.toString().padStart(2, "0");
+            };
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        });
+
+    </script>
+    <script>
+        const userIcon = document.getElementById("userIcon");
+        const dropdown = document.getElementById("profileDropdown");
+
+        userIcon.addEventListener("click", () => {
+            dropdown.classList.toggle("active");
+        });
+
+        /* Close when clicking outside */
+        document.addEventListener("click", (e) => {
+
+            if (
+                !userIcon.contains(e.target) &&
+                !dropdown.contains(e.target)
+            ) {
+                dropdown.classList.remove("active");
+            }
+
+        });
+    </script>
+    <script>
+        const burger = document.getElementById('burgerMenu');
+        const mobileNav = document.getElementById('mobileNav');
+        const closeNav = document.getElementById('closeNav');
+
+        // Open mobile nav
+        burger.addEventListener('click', (e) => {
+            e.stopPropagation(); // prevent immediate close
+            mobileNav.classList.add('active');
+        });
+
+        // Close when clicking the X button
+        closeNav.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+        });
+
+        // Close when clicking anywhere outside the nav
+        document.addEventListener('click', (e) => {
+            // Only close if nav is open and click is outside it and not on burger
+            if (
+                mobileNav.classList.contains('active') &&
+                !mobileNav.contains(e.target) &&
+                e.target !== burger
+            ) {
+                mobileNav.classList.remove('active');
+            }
+        });
+    </script>
+    <script>
+        const wrapper = document.querySelector('.category-wrapper');
+        const mainBtn = document.querySelector('.main-btn');
+        const categoryItems = document.querySelectorAll('.category-item');
+
+        mainBtn.addEventListener('click', () => {
+            wrapper.classList.toggle('active');
+        });
+
+        categoryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                alert(`You selected: ${item.textContent}`);
+                wrapper.classList.remove('active');
+            });
+        });
+    </script>
+    <script>
+        document.querySelectorAll(".qty-input").forEach(input => {
+
+            // Format on load
+            input.value = String(input.value).padStart(2, '0');
+
+            input.addEventListener("change", () => {
+                let value = parseInt(input.value);
+
+                if (value < 1) value = 1;
+
+                input.value = String(value).padStart(2, '0');
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".size-selector ul a").click(function () {
+                $(this).parent().siblings().removeClass("active");
+                $(this).parent().addClass("active");
+                var this_html = $(this).html();
+                $(".size-selector p").html("Size: " + this_html);
+            });
+
+            $("#qty .plus").click(function () {
+                var qty = parseInt($("#qty input").val());
+                if (qty == NaN) {
+                    qty = 0; // Handle cases where the input is not a number
+                }
+                if (qty <= 13) {
+                    $("#qty input").val(qty + 1);
+                }
+            });
+            $("#qty .minus").click(function () {
+                var qty = parseInt($("#qty input").val());
+                if ((qty == NaN)) {
+                    qty = 0; // Handle cases where the input is not a number
+                }
+                if (qty > 1) {
+                    $("#qty input").val(qty - 1);
+                }
+            });
+        });
+        // Set the date we're counting down to
+        var countDownDate = new Date("july 25, 2025 00:09:01").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = 0;
+                document.getElementById("hours").innerHTML = 0;
+                document.getElementById("minutes").innerHTML = 0;
+                document.getElementById("seconds").innerHTML = 0;
+            }
+        }, 1000);
+
+    </script>
+    <script>
+        document.querySelectorAll('.color-circle').forEach(circle => {
+            circle.addEventListener('click', function () {
+                const radioId = this.dataset.for;
+                const radio = document.getElementById(radioId);
+
+                // Check the radio
+                radio.checked = true;
+
+                // Remove border from all
+                document.querySelectorAll('.color-circle').forEach(c => {
+                    c.classList.remove('active');
+                });
+
+                // Add active border
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
