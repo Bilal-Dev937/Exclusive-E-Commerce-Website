@@ -5003,6 +5003,12 @@ footer {
 }
 
 @media (max-width:576px) {
+    header{
+        .profile-wrapper{
+            margin-left: 125px;
+            .user-icon{}
+        }
+    }
     main {
         .flash-sales {
             .product-cards-row {

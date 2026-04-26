@@ -194,7 +194,7 @@
                         </div>
 
                         <div class="process-btn">
-                            <button>Procees to checkout</button>
+                            <button class="link-btn" data-link="billing.html">Procees to checkout</button>
                         </div>
 
                     </div>
@@ -527,6 +527,16 @@
                 input.value = String(value).padStart(2, '0');
             });
 
+        });
+    </script>
+    <script>
+        const buttons = document.querySelectorAll(".link-btn");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                const link = button.getAttribute("data-link");
+                window.location.href = link;
+            });
         });
     </script>
     <!-- <script>
